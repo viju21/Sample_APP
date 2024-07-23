@@ -29,8 +29,8 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t your-app-image .
+          docker build -t nginx:latest .
 
       - name: Run Docker container
         run: |
-          docker run -d -p 8080:80 your-app-image
+          docker run -d -p 8080:80 nginx:latest
